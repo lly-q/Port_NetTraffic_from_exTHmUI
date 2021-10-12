@@ -1305,6 +1305,19 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
+.field public static final NETWORK_TRAFFIC_AUTOHIDE:Ljava/lang/String; = "network_traffic_autohide"
+
+.field public static final NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD:Ljava/lang/String; = "network_traffic_autohide_threshold"
+
+.field public static final NETWORK_TRAFFIC_HIDEARROW:Ljava/lang/String; = "network_traffic_hidearrow"
+
+.field public static final NETWORK_TRAFFIC_LOCATION:Ljava/lang/String; = "network_traffic_location"
+
+.field public static final NETWORK_TRAFFIC_MODE:Ljava/lang/String; = "network_traffic_mode"
+
+.field public static final NETWORK_TRAFFIC_REFRESH_INTERVAL:Ljava/lang/String; = "network_traffic_refresh_interval"
+
+.field public static final NETWORK_TRAFFIC_UNITS:Ljava/lang/String; = "network_traffic_units"
 
 .field public static final NFC_PAYMENT_DEFAULT_COMPONENT:Ljava/lang/String; = "nfc_payment_default_component"
 

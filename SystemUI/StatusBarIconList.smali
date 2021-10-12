@@ -39,6 +39,21 @@
 
     .line 34
     array-length v0, p1
+    new-instance v2, Lcom/android/systemui/statusbar/phone/StatusBarIconList$Slot;
+
+    .line 38
+    invoke-static {}, Lcom/android/systemui/statusbar/phone/StatusBarIconHolder;->fromNetworkTraffic()Lcom/android/systemui/statusbar/phone/StatusBarIconHolder;
+
+    move-result-object v3
+
+    const-string v4, "networktraffic"
+
+    invoke-direct {v2, v4, v3}, Lcom/android/systemui/statusbar/phone/StatusBarIconList$Slot;-><init>(Ljava/lang/String;Lcom/android/systemui/statusbar/phone/StatusBarIconHolder;)V
+
+    const/4 v3, 0x0
+
+    .line 37
+    invoke-virtual {v0, v3, v2}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     const/4 v1, 0x0
 
@@ -238,6 +253,7 @@
 
     invoke-direct {v0, p1, v2}, Lcom/android/systemui/statusbar/phone/StatusBarIconList$Slot;-><init>(Ljava/lang/String;Lcom/android/systemui/statusbar/phone/StatusBarIconHolder;)V
 
+    const/4 v1, 0x1
     invoke-virtual {p0, v1, v0}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     return v1

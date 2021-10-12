@@ -620,6 +620,13 @@
 
 .field public static final stat_sys_managed_profile_status:I = 0x7f0806d7
 
+#stat_sys_network_traffic_down stat_sys_network_traffic_up stat_sys_network_traffic_updown depended on drawable xml files id. They are not sure
+.field public static final stat_sys_network_traffic_down:I = 0x7f0806ed
+
+.field public static final stat_sys_network_traffic_up:I = 0x7f0806ee
+
+.field public static final stat_sys_network_traffic_updown:I = 0x7f0806ef
+
 .field public static final stat_sys_ringer_silent:I = 0x7f0806d9
 
 .field public static final stat_sys_ringer_vibrate:I = 0x7f0806da

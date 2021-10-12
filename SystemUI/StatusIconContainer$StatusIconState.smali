@@ -194,7 +194,23 @@
 
     .line 459
     :cond_6
+
     :goto_2
+    invoke-interface {v2}, Lcom/android/systemui/statusbar/StatusIconDisplayable;->getSlot()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v7, "networktraffic"
+
+    if-ne v5, v7, :cond_74
+
+    move v4, v6
+
+    goto :goto_75
+
+    :cond_74
+    .line 435
+    :goto_75
     iget v1, p0, Lcom/android/systemui/statusbar/phone/StatusIconContainer$StatusIconState;->visibleState:I
 
     invoke-interface {v2, v1, v4}, Lcom/android/systemui/statusbar/StatusIconDisplayable;->setVisibleState(IZ)V

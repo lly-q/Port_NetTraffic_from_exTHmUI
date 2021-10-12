@@ -112,7 +112,21 @@
 
     return-object v0
 .end method
+.method public static fromNetworkTraffic()Lcom/android/systemui/statusbar/phone/StatusBarIconHolder;
+    .registers 2
 
+    .line 76
+    new-instance v0, Lcom/android/systemui/statusbar/phone/StatusBarIconHolder;
+
+    invoke-direct {v0}, Lcom/android/systemui/statusbar/phone/StatusBarIconHolder;-><init>()V
+
+    const/16 v1, 0x2a
+
+    .line 77
+    iput v1, v0, Lcom/android/systemui/statusbar/phone/StatusBarIconHolder;->mType:I
+
+    return-object v0
+.end method
 .method public static fromMobileIconState(Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy$MobileIconState;)Lcom/android/systemui/statusbar/phone/StatusBarIconHolder;
     .locals 2
 
